@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".activity.WeiZhangActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar"
+            android:background="#0B84E4"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="违章查询"
+            android:textColor="#fff"
+            android:id="@+id/service_name"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/webView"/>
+
+<LinearLayout
+    android:layout_margin="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="违章查询："/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:hint="输入号牌种类"
+        android:id="@+id/edt_type"/>
+    <EditText
+        android:layout_weight="1"
+        android:id="@+id/edt_unm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="输入车牌号码"/>
+</LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查询"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:background="@drawable/login_btn_bg"
+        android:layout_margin="15dp"
+        android:id="@+id/btn_query"/>
+
+</LinearLayout>

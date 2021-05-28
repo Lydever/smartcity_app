@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DFDFDF"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--顶部搜索框-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="vertical"
+        android:background="#1A5BDD">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/home_search_shape"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginLeft="13dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/home_search_icon"/>
+            <EditText
+                android:layout_marginLeft="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/ed_search"
+                android:singleLine="true"
+                android:imeOptions="actionSearch"
+                android:background="@null"
+                android:hint="搜索你想看的新闻"
+                android:textColor="#000"
+                android:textColorHint="#737373"/>
+        </LinearLayout>
+    </LinearLayout>
+    <com.youth.banner.Banner
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#BBD9F3"
+        android:id="@+id/banner"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--服务-->
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#B5D6F1"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:id="@+id/home_recyclerview"/>
+
+            <!--主题推荐-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/login_form_bg"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="主题推荐"
+                        android:gravity="left"
+                        android:id="@+id/tv_theme_title"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="热门主题 >"
+                        android:gravity="right"
+                        android:id="@+id/tv_theme"/>
+                </LinearLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:id="@+id/home_recyclerview1"/>
+            </LinearLayout>
+
+            <!--新闻-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/login_form_bg"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/tv_more"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="查看更多 >"/>
+                <com.google.android.material.tabs.TabLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/login_form_bg"
+                    app:tabGravity="fill"
+                    app:tabMode="fixed"
+                    app:tabTextColor="#121212"
+                    app:tabIndicatorColor="#F8C221"
+                    app:tabSelectedTextColor="#FFC107"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tab_layout"/>
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/view_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@drawable/login_form_bg"
+                    android:layout_weight="1">
+                </androidx.viewpager.widget.ViewPager>
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/home_listview"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:padding="10dp"
+    android:background="#0B7CF4"
+    android:gravity="center"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_gravity="center"
+        android:id="@+id/theme_img"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="智慧巴士"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="#EF2D2D"
+        android:id="@+id/theme_name"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="智慧巴士智慧巴士智慧巴士"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="#fff"
+        android:id="@+id/theme_desc"/>
+
+</LinearLayout>

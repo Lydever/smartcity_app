@@ -1,0 +1,161 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_usercenter"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#22349C"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="个人中心"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_below="@id/tv_usercenter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:background="#3F51B5">
+
+            <ImageButton
+                android:id="@+id/user_img"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:background="@mipmap/top_image_icon" />
+
+            <TextView
+                android:id="@+id/tv_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="130dp"
+                android:text="我是李子哈"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="#eee" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/ll_info"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextStyle"
+                android:text="个人信息" />
+            <ImageButton
+                android:id="@+id/ib_user_info"
+                android:layout_width="40dp"
+                android:layout_marginLeft="230dp"
+                android:layout_height="40dp"
+                android:background="@null"
+                android:src="@mipmap/home_arrow_right"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="45dp"
+            android:background="#eee" />
+
+        <LinearLayout
+            android:id="@+id/ll_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextStyle"
+                android:text="订单列表" />
+            <ImageButton
+                android:id="@+id/ib_order_list"
+                android:layout_gravity="left"
+                android:layout_width="40dp"
+                android:layout_marginLeft="230dp"
+                android:layout_height="40dp"
+                android:background="@null"
+                android:src="@mipmap/home_arrow_right"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="45dp"
+            android:background="#eee" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/TextStyle"
+                android:text="修改密码" />
+            <ImageButton
+                android:layout_gravity="left"
+                android:layout_width="40dp"
+                android:id="@+id/ib_update_psw"
+                android:layout_marginLeft="230dp"
+                android:layout_height="40dp"
+                android:background="@null"
+                android:src="@mipmap/home_arrow_right"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="45dp"
+            android:background="#eee" />
+        <LinearLayout
+            android:id="@+id/ll_advice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/TextStyle"
+                android:text="意见反馈" />
+            <ImageButton
+                android:layout_gravity="left"
+                android:layout_width="40dp"
+                android:id="@+id/ib_advise"
+                android:layout_marginLeft="230dp"
+                android:layout_height="40dp"
+                android:background="@null"
+                android:src="@mipmap/home_arrow_right"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="45dp"
+            android:background="#eee" />
+        <Button
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="退出账号"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:background="#A3184FF1"
+            android:id="@+id/btn_out"/>
+    </LinearLayout>
+
+</RelativeLayout>
