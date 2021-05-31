@@ -7,10 +7,13 @@
     android:orientation="vertical"
     tools:context=".activity.ServiceActivity">
 
-    <GridView
+    <!--服务-->
+    <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:numColumns="3"
-        android:id="@+id/gridView"/>
+        android:background="#B5D6F1"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:id="@+id/service_recyclerview"/>
 
 </LinearLayout>

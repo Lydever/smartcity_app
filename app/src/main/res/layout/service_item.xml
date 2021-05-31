@@ -21,6 +21,6 @@
         android:textSize="20sp"
         android:textColor="#131313"
         android:layout_gravity="center"
-        android:text="1111"
+        android:text="智慧出行"
         />
 </LinearLayout>
