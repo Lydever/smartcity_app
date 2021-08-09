@@ -1,5 +1,5 @@
 # SmartCity_App
-基于android移动原生开发的一个智慧城市app
+基于android移动原生开发的一个智慧城市app,本项目中的数据全部实现云数据请求。
 
 # 核心功能
 
