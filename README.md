@@ -1,6 +1,25 @@
 # SmartCity_App
 基于android移动原生开发的一个智慧城市app, 本项目中的数据全部实现云数据请求。
 
+# 拉取代码
+```
+https://github.com/Lydever/smartcity_app.git
+```
+
+# 技术选型
+- android studio 4.0
+- gradle 6.1.1
+- Android SDK 30
+
+# android studio 如何导入项目？
+1. `File`--`Open`--选择本地项目地址
+2. ![image](https://user-images.githubusercontent.com/65069676/142759127-93e39418-765a-4160-87dd-8c5a22caebeb.png)
+3. ![image](https://user-images.githubusercontent.com/65069676/142759172-c59275fd-7f8b-48fb-afe3-35c94a7b6c70.png)
+修改好后重新运行构建一下
+
+注意：项目是以前的，里面的接口可能挂了，登陆连接后台的，如果了的话会跑不起来，不过实现的思路一致，换个接口，根据接口返回的json字段参数重新写bean实体类，在根据对应的参数数据解析即可
+
+
 # 核心功能
 
 智慧城市是一个智慧巴士，智慧医疗，智慧社区，智慧养老，智慧服务等多个便民服务理念构成。最终实现的是首页热门，巴士推荐，热门主题，新闻，智慧服务（医疗服务，城市地铁，找工作，找房子等），智慧建党，个人中心等功能模块。
