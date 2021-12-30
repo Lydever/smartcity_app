@@ -3,7 +3,7 @@
 
 # 拉取代码
 ```
-https://github.com/Lydever/smartcity_app.git
+git clone https://github.com/Lydever/smartcity_app.git
 ```
 
 # 技术选型
